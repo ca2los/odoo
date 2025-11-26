@@ -13,6 +13,7 @@
     background: radial-gradient(circle at center, #2b2c5f, #111233);
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
     &:before {
         content: '';
         position: absolute;
@@ -20,5 +21,9 @@
         background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 4px, transparent 2px);
         background-size: 18px 18px;
         opacity: 0.4;
+    }
+    .card-body {
+        position: relative;
+        z-index: 1;
     }
 }
