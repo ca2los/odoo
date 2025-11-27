@@ -71,3 +71,14 @@
         }
     }
 }
+
+/** Dotted Curves **/
+.feature-curve-wrapper {
+    max-width: 300px;
+    top: -140px;
+    .curved-left {
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+    }
+}
