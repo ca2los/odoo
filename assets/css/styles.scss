@@ -50,20 +50,23 @@
 }
 
 /** Services **/
-.service-stack {
-    min-height: 340px;
-    .service-image {
-        width: 55%;
-        top: -70px;
-        right: -60px;
-        img {
-            width: 100%;
-        }
-        a {
-            top: 20px;
-            right: 20px;
-            span {
-
+.services-odoo {
+    button {
+        top: 20px;
+        left: 20px;
+    }
+    .service-stack {
+        min-height: 340px;
+        .service-image {
+            width: 55%;
+            top: -70px;
+            right: -60px;
+            img {
+                width: 100%;
+            }
+            button {
+                right: 20px;
+                left: auto;
             }
         }
     }
