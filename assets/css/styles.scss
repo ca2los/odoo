@@ -5,12 +5,14 @@
     --bs-primary-rgb: 3, 138, 255;
     --bs-body-font-family: "Inter", sans-serif;
 }
+
 /** Custom Utilities **/
 .border-bottom-dotted {
     border-bottom-width: 1px;
     border-bottom-style: dotted;
     border-bottom-color: rgba(0,0,0,.4);
 }
+
 /** Credit Card **/
 .credit-card-wrapper {
     border-bottom-right-radius: 100px !important;
@@ -36,6 +38,7 @@
         }
     }
 }
+
 /** Separator **/
 .separator {
     height: 100px;
