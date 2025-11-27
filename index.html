@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <body>
-
         <!-- NavBar Component -->
         <header class="bg-primary text-white">
             <nav class="navbar navbar-expand-lg navbar-dark pt-4">
@@ -70,7 +69,13 @@
                     <!-- Credit Card: Handmade Coded -->
                     <div class="col-lg-6">
                         <div class="bg-white text-dark rounded-4 shadow-lg p-4 p-md-5 credit-card-wrapper">
-                            <div class="card credit-card border-0 text-white shadow-lg">
+                            <!-- Header Data -->
+                            <div class="pb-4 pt-0 d-flex justify-content-between align-items-center">
+                                <p class="mb-0 fw-medium small text-muted">Manage cards</p>
+                                <button type="button" class="btn btn-outline-secondary btn-sm text-dark fw-bold">Add new</button>
+                            </div>
+                            <!-- Credit Card -->
+                            <div class="card credit-card border-0 text-white shadow-lg mb-4">
                                 <div class="card-body p-4 position-relative">
                                     <div class="d-flex justify-content-between align-items-start mb-4">
                                         <div class="credit-card-brand">
@@ -92,11 +97,30 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Recent Transactions -->
+                            <div class="pt-3 credit-card-transactions">
+                                <div class="d-flex justify-content-between align-items-center mb-3 small border-bottom pb-4">
+                                    <div>
+                                        <p class="mb-0 fw-semibold">Starbucks</p>
+                                        <p class="mb-0 text-muted">Pending - San Francisco, USA</p>
+                                    </div>
+                                    <p class="mb-0 fw-semibold">USD $5.50</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3 small border-bottom pb-4">
+                                    <div>
+                                        <p class="mb-0 fw-semibold">Nike Sports</p>
+                                        <p class="mb-0 text-muted">Pending - Lisbon, POR</p>
+                                    </div>
+                                    <p class="mb-0 fw-semibold">USD $129.00</p>
+                                </div>
+                                <a href="#" class="small text-primary fw-semibold text-decoration-none border-bottom-dotted">View all <img src="assets/img/next.svg" alt="Next" height="16"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="col-lg separator"></div>
 
         <footer></footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
