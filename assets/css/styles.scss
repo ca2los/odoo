@@ -4,6 +4,7 @@
     --bs-primary: #038aff;
     --bs-primary-rgb: 3, 138, 255;
     --bs-body-font-family: "Inter", sans-serif;
+    --bs-progress-height: 3px;
 }
 
 /** Custom Utilities **/
@@ -11,6 +12,9 @@
     border-bottom-width: 1px;
     border-bottom-style: dotted;
     border-bottom-color: rgba(0,0,0,.4);
+}
+.progress-bar-thin {
+    height: 3px;
 }
 
 /** Credit Card **/
@@ -43,4 +47,24 @@
 .separator {
     height: 100px;
     background-image: linear-gradient(-2deg, #ffffff 0%, #ffffff 50%, #068aff 50%, #068aff 100%);
+}
+
+/** Services **/
+.service-stack {
+    min-height: 340px;
+    .service-image {
+        width: 55%;
+        top: -70px;
+        right: -60px;
+        img {
+            width: 100%;
+        }
+        a {
+            top: 20px;
+            right: 20px;
+            span {
+
+            }
+        }
+    }
 }
