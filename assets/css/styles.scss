@@ -22,6 +22,19 @@ body {
     height: 3px;
 }
 
+/** Global BTN Transitions **/
+.btn {
+    transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.75rem 1.75rem rgba(0, 87, 236, 0.35);
+}
+.btn-light:hover {
+    background: #e1e1e1;
+    box-shadow: rgba(3, 23, 42, 0.1) 0 0.1rem .4rem;
+}
+
 /** Credit Card **/
 .credit-card-wrapper {
     border-bottom-right-radius: 100px !important;
