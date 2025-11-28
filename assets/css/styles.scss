@@ -130,6 +130,10 @@ img[src="assets/img/star.svg"] {
 }
 
 /** Accordion **/
+.accordion-item {
+    border: 1px solid #cdcdcd !important;
+    border-radius: 10px !important;
+}
 .accordion-button {
     &::after {
         content: '';
