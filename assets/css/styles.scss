@@ -43,10 +43,19 @@
     }
 }
 
-/** Separator **/
+/** Separators **/
 .separator {
     height: 100px;
     background-image: linear-gradient(-2deg, #ffffff 0%, #ffffff 50%, #068aff 50%, #068aff 100%);
+}
+.separator-award {
+    height: 100px;
+    &.sa-top {
+        background-image: linear-gradient(-2deg, #ebeeff 0%, #ebeeff 50%, #ffffff 50%, #ffffff 100%);
+    }
+    &.sa-bottom {
+        background-image: linear-gradient(-2deg, #ffffff 0%, #ffffff 50%, #ebeeff 50%, #ebeeff 100%);
+    }
 }
 
 /** Services: Blocks **/
@@ -71,13 +80,6 @@
         }
     }
     img {
-        /* Stars RPD */
-        &[src="assets/img/star.svg"] {
-            filter: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(291deg) saturate(5000%);
-            &:last-child {
-                filter: invert(50%) saturate(200%) hue-rotate(180deg) brightness(100%);
-            }
-        }
         &.characters {
             max-width: 50px;
             border: solid ;
@@ -95,6 +97,14 @@
     }
 }
 
+/* Stars RPD */
+img[src="assets/img/star.svg"] {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(291deg) saturate(5000%);
+    &:last-child {
+        filter: invert(50%) saturate(200%) hue-rotate(180deg) brightness(100%);
+    }
+}
+
 /** Dotted Curves **/
 .feature-curve-wrapper {
     max-width: 300px;
@@ -103,5 +113,18 @@
         inset: 0;
         pointer-events: none;
         z-index: 0;
+    }
+}
+
+/** Awards **/
+.awards {
+    background-color: #ebeeff;
+    .awards-card {
+        border-radius: 1.5rem;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 1.5rem 3rem rgba(15, 23, 42, 0.12);
+        }
     }
 }
