@@ -188,6 +188,9 @@ img[src="assets/img/star.svg"] {
 
 /** Media Queries **/
 @media screen and (max-width: 991px) {
+    .odoo-lego {
+        background-color: #ffffff!important;
+    }
     .navbar-collapse.collapse {
         &.show {
             border-radius: 10px;
