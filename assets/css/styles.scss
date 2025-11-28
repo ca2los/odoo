@@ -7,9 +7,17 @@
     --bs-progress-height: 3px;
 }
 
-/** Fixed Navbar **/
+/** Navbar **/
 body {
     padding-top: 90px;
+}
+.navbar-collapse.collapse {
+    &.show {
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 1.3rem 1.75rem rgba(0, 87, 236, .35);
+        padding: 20px;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
 }
 
 /** Custom Utilities **/
@@ -40,7 +48,8 @@ body {
     border-bottom-right-radius: 100px !important;
     .credit-card {
         max-width: 5300px;
-        min-width: 380px;
+        min-width: 300px;
+        min-height: 300px;
         border-radius: 1rem;
         background: radial-gradient(circle at center, #2b2c5f, #111233);
         margin: 0 auto;
@@ -175,4 +184,31 @@ img[src="assets/img/star.svg"] {
     background-color: #16194f;
     color: #f9fafb;
     margin-top: 5rem;
+}
+
+/** Media Queries **/
+@media screen and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        &.show {
+            border-radius: 10px;
+            box-shadow: 0 1.3rem 1.75rem rgba(0, 87, 236, .35);
+            transition: transform 0.15s ease, box-shadow 0.15s ease, margin-top 0.15s ease, opacity 0.15s ease, padding 0.15s ease;
+            .nav-item {
+                border-bottom: 1px solid #339fff;
+            }
+            .d-flex.flex-wrap.gap-2 {
+                justify-content: center;
+                a:first-child {
+                    border: 1px solid #fff;
+                }
+            }
+        }
+    }
+    .services-odoo .service-stack .service-image {
+        top: -100px;
+        right: 0;
+    }
+}
+@media screen and (max-width: 400px) {
+
 }
