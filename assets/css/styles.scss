@@ -128,3 +128,11 @@ img[src="assets/img/star.svg"] {
         }
     }
 }
+
+/** Accordion **/
+.accordion-button {
+    &::after {
+        content: '';
+        background-image: url("https://ca2los.github.io/odoo/assets/img/plus.svg");
+    }
+}
