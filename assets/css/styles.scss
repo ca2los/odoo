@@ -46,15 +46,17 @@
 /** Separators **/
 .separator {
     height: 100px;
-    background-image: linear-gradient(-2deg, #ffffff 0%, #ffffff 50%, #068aff 50%, #068aff 100%);
-}
-.separator-award {
-    height: 100px;
+    &.ss-cc {
+        background-image: linear-gradient(-2deg, #ffffff 0%, #ffffff 50%, #068aff 50%, #068aff 100%);
+    }
     &.sa-top {
         background-image: linear-gradient(-2deg, #ebeeff 0%, #ebeeff 50%, #ffffff 50%, #ffffff 100%);
     }
     &.sa-bottom {
         background-image: linear-gradient(-2deg, #ffffff 0%, #ffffff 50%, #ebeeff 50%, #ebeeff 100%);
+    }
+    &.sf-top {
+        background-image: linear-gradient(-2deg, #16194f 0%, #16194f 50%, #ffffff 50%, #ffffff 100%);
     }
 }
 
@@ -139,4 +141,11 @@ img[src="assets/img/star.svg"] {
         content: '';
         background-image: url("https://ca2los.github.io/odoo/assets/img/plus.svg");
     }
+}
+
+/** Footer **/
+.odoo-footer {
+    background-color: #16194f;
+    color: #f9fafb;
+    margin-top: 5rem;
 }
