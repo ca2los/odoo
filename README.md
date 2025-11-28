@@ -1,4 +1,5 @@
 # Odoo - Frontend (Landing Page)
+
 [***This project***](https://ca2los.github.io/odoo/) is a pixel-inspired implementation of an Odoo landing-page using `HTML5`, `SCSS`, `Bootstrap 5.3` and 
 `Vanilla JS`. The goal was to reproduce the provided mockup while keeping the code clean, modular, and easy to extend.
 ---
@@ -22,7 +23,7 @@
 │   │   └── styles.css          # Compiled SCSS
 │   ├── scss
 │   │   └── styles.scss         # Custom theme & components
-│   ├── img                     # Logos, illustrations and icons
+│   ├── img/*                   # Logos, illustrations and icons
 │   └── js
 │       └── custom-script.js    # Navbar behavior
 ```
