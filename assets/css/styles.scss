@@ -49,7 +49,7 @@
     background-image: linear-gradient(-2deg, #ffffff 0%, #ffffff 50%, #068aff 50%, #068aff 100%);
 }
 
-/** Services **/
+/** Services: Blocks **/
 .services-odoo {
     button {
         top: 20px;
@@ -68,6 +68,25 @@
                 right: 20px;
                 left: auto;
             }
+        }
+    }
+    img {
+        /* Stars RPD */
+        &[src="assets/img/star.svg"] {
+            filter: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(291deg) saturate(5000%);
+            &:last-child {
+                filter: invert(50%) saturate(200%) hue-rotate(180deg) brightness(100%);
+            }
+        }
+        &.characters {
+            max-width: 50px;
+            border: solid ;
+        }
+        &:first-child {
+            right: -20px;
+        }
+        &:last-child {
+            left: -20px;
         }
     }
 }
