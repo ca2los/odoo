@@ -7,6 +7,14 @@
     --bs-progress-height: 3px;
 }
 
+/** Anchors **/
+html {
+    scroll-behavior: smooth;
+}
+.odoo-anchor {
+    scroll-margin-top: 100px;
+}
+
 /** Navbar **/
 body {
     padding-top: 90px;
