@@ -34,6 +34,7 @@
   - Mobile-friendly **hamburger** using `collapse`
   - Custom JS that ensures the menu **closes automatically** after clicking an option
   - Subtle styles to match the original design
+  - Options anchored
 - Credit Card:
   - Two-column hero layout Bootstrap grid
   - Custom credit card component
